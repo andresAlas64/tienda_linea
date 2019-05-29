@@ -4,8 +4,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background: #F5F5F5;
+    font-family: 'Lato', sans-serif;
 }
 
 .bg-color {
@@ -17,5 +16,35 @@ body {
     font-size: 1.5em;
 }
 
-/**/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
+.text-color {
+    color: #0336FF;
+}
+
+.btn-color {
+    background: #0336FF;
+    color: #F5F5F5;
+}
+
+.btn-color:hover {
+    background: none;
+    border: 1px solid #0336FF;
+    color: #0336FF;
+}
+
+.bg-color-card {
+    background: #F5F5F5;
+}
+
+footer {
+    color: #F5F5F5;
+}
