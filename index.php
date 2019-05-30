@@ -5,7 +5,7 @@
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-color">
     <div class="container">
-        <a class="navbar-brand" href="#">Tienda</a>
+        <a class="navbar-brand" href="#"><img src="img/codepen.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,13 +15,13 @@
                     <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inicia sesión</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Carrito</a>
                 </li>
             </ul>
         </div>
@@ -37,13 +37,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/banner.png" class="d-block w-100" alt="...">
+        <img src="img/banner.png" class="d-block w-100" alt="Imagen uno">
       </div>
       <div class="carousel-item">
-        <img src="img/banner.png" class="d-block w-100" alt="...">
+        <img src="img/banner.png" class="d-block w-100" alt="Imagen dos">
       </div>
       <div class="carousel-item">
-        <img src="img/banner.png" class="d-block w-100" alt="...">
+        <img src="img/banner.png" class="d-block w-100" alt="Imagen tres">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -93,7 +93,7 @@
                         <p class="text-color">$200.99</p>
                         <p>
                         <a class="btn btn-color" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                            Ver más
+                            <i class="fas fa-plus"></i> Ver más
                         </a>
                         </p>
                         <div class="collapse" id="collapseExample2">
@@ -136,9 +136,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--  -->
-
             <div class="col-md-3">
                 <div class="card" style="width: 100%;">
                     <img src="img/ps4.png" class="card-img-top" alt="...">
@@ -210,39 +207,40 @@
         </div>
     </div>
 </section>
+
 <!-- Card -->
 <footer class="page-footer font-small pt-4 bg-color">
     <div class="container">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <h5>Footer Content</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa ratione unde minima nam beatae adipisci expedita soluta facere accusantium facilis ullam impedit praesentium.
+                    <h5 class="text-footer">Footer Content</h5>
+                    <p class="text-footer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa ratione unde minima nam beatae adipisci expedita soluta facere accusantium facilis ullam impedit.
                     </p>
                 </div>
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h5>Contacto</h5>
+                    <h5 class="text-footer">Contacto</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!" class="text-color">Facebook</a>
+                            <a href="#">Facebook/tienda</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-color">Link 2</a>
+                            <a href="#">tienda@gmail.com</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-color">Link 3</a>
+                            <a href="#">Tel: 8535-4465</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-color">Link 4</a>
+                            <a href="#">Dir: San Juan de Tidas</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright text-center py-3">
-            © 2019 - Derechos reservados
+            <span class="text-footer">© 2019 - Derechos reservados</span>
         </div>
     </div>
 </footer>

@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .bg-color {
@@ -33,6 +33,7 @@ body {
 .btn-color {
     background: #0336FF;
     color: #F5F5F5;
+    font-weight: lighter;
 }
 
 .btn-color:hover {
@@ -45,6 +46,18 @@ body {
     background: #F5F5F5;
 }
 
-footer {
+/*footer {
     color: #F5F5F5;
+}*/
+
+.text-footer {
+    color: #F5F5F5;
+}
+
+footer, a {
+    color: #F5F5F5;
+}
+
+footer, a:hover {
+    color: #D1D1D1;
 }
