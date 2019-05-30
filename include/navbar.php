@@ -7,10 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Productos <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Registrarse</a>
+                    <a class="nav-link" href="registrarse.php">Registrarse</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Iniciar sesión</a>
