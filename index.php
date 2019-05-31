@@ -70,7 +70,7 @@
                         <p class="text-color">$200.99</p>
                         <p>
                         <a class="btn btn-color" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                            <i class="fas fa-plus"></i> Ver más
+                            Ver más
                         </a>
                         </p>
                         <div class="collapse" id="collapseExample2">

@@ -10,7 +10,7 @@
 
         $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave, id_rol)
         VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada', '$id_rol')";
-        
+
         echo $result = mysqli_query($con, $query);
     }
 ?>
