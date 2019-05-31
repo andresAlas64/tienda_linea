@@ -5,7 +5,7 @@
     include_once 'include/navbar.php';
     include_once 'services/conexion.php';
 
-    $mensaje = '';
+    //$mensaje = '';
 
     /*if(!empty($_POST['nombre']) && !empty($_POST['direccion']) && !empty($_POST['telefono']) &&  !empty($_POST['correo']) && !empty($_POST['contrasena']) && !empty($_POST['id_rol'])) {
         $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave, id_rol)
@@ -30,7 +30,7 @@
         }
     }*/
 
-    agregar($_POST['nombre'], $_POST['direccion'], $_POST['telefono'], $_POST['correo'], $_POST['contrasena'], $_POST['id_rol']);
+    /*agregar($_POST['nombre'], $_POST['direccion'], $_POST['telefono'], $_POST['correo'], $_POST['contrasena'], $_POST['id_rol']);
 
     function agregar($nombre, $direccion, $telefono, $correo, $contrasena, $id_rol) {
         include_once 'services/conexion.php';
@@ -39,31 +39,26 @@
         VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasena', '$id_rol')";
 
         echo $result = mysqli_query($con, $query);
-    }
+    }*/
 ?>
-
-
-<?php if(!empty($mensaje)): ?>
-  <p> <?= $mensaje ?></p>
-<?php endif; ?>
 <div class="container my-5">
     <div class="row">
         <div class="col-md-12">
-            <form action="registrarse.php" method="POST">
+            <form id="form-registro">
                 <div class="container">
                     <h5 class="color-gray mb-4">Formulario de registro</h5>
                     <div class="row">
-                        <input type="hidden" name="id_rol" value="<?php echo $id_rol = 2;?>">
+                        <!--<input type="hidden" name="id_rol" value="<?php echo $id_rol = 2;?>">-->
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
+                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="direccion">Dirección</label>
-                                <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Ingrese la dirección">
+                                <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección">
                             </div>
                         </div>
                     </div>
@@ -71,23 +66,23 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="telefono">Telefono</label>
-                                <input type="text" name="telefono" class="form-control" id="telefono" placeholder="Ingrese el telefono">
+                                <input type="text" class="form-control" id="telefono" placeholder="Ingrese el telefono">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="correo">Correo</label>
-                                <input type="text" name="correo" class="form-control" id="correo" placeholder="Ingrese el correo">
+                                <input type="text" class="form-control" id="correo" placeholder="Ingrese el correo">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="contrasena">Contraseña</label>
-                                <input type="password" name="contrasena" class="form-control" id="contrasena" placeholder="Ingrese la contraseña">
+                                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese la contraseña">
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-color">Registrarse</button>
+                    <button type="button" id="btn-registro" class="btn btn-color"><i class="fas fa-sign-in-alt"></i> Registrarse</button>
                 </div>
             </form>
         </div>
