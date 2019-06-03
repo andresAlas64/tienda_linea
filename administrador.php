@@ -18,7 +18,7 @@
     echo "<div class='container'>
         <div class='row'>
             <div class='col-md-12'>
-            <a href='agregarAdmin.php' class='btn btn-color mb-3'><i class='fas fa-user-plus'></i> Agregar admin</a>
+            <a href='agregarAdmin.php' class='btn btn-color mb-3'><i class='fas fa-user-plus'></i> Agregar administrador</a>
                 <div class='table-responsive'>
                     <table class='table table-striped'>
                         <thead>

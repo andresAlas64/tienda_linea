@@ -36,7 +36,7 @@
 <!-- Carousel -->
 
 <!-- Titulo -->
-<div class="container">
+<div id="productos" class="container">
     <h2 class="mb-4 color-gray">Catalogo de productos</h2>
 </div>
 <!-- Titulo -->
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <div class="card" style="width: 100%;">
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <div class="card" style="width: 100%;">
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
@@ -147,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <div class="card" style="width: 100%;">
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <div class="card" style="width: 100%;">
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">

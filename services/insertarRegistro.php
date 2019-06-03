@@ -6,8 +6,6 @@
 
         $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
 
-        //$fechaRegistro = date('d-m-Y');
-   
         $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave)
         VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada')";
 
