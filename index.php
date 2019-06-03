@@ -50,9 +50,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="..." width="400px">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Ver más
                         </a>
                         </p>
@@ -67,9 +67,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                             Ver más
                         </a>
                         </p>
@@ -84,9 +84,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
                             Ver más
                         </a>
                         </p>
@@ -101,9 +101,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
                             Ver más
                         </a>
                         </p>
@@ -118,9 +118,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
                             Ver más
                         </a>
                         </p>
@@ -135,9 +135,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
                             Ver más
                         </a>
                         </p>
@@ -152,9 +152,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
                             Ver más
                         </a>
                         </p>
@@ -169,9 +169,9 @@
                     <img src="img/ps4.png" class="card-img-top" alt="...">
                     <div class="card-body bg-color-card">
                         <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">$200.99</p>
+                        <p class="text-color">Precio: $200.99</p>
                         <p>
-                        <a class="btn btn-color" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
+                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
                             Ver más
                         </a>
                         </p>

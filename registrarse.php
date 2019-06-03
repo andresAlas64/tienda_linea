@@ -14,13 +14,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
+                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre" maxlength="60" required autofocus>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="direccion">Dirección</label>
-                                <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección">
+                                <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección" maxlength="255" required>
                             </div>
                         </div>
                     </div>
@@ -28,19 +28,19 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="telefono">Telefono</label>
-                                <input type="text" class="form-control" id="telefono" placeholder="Ingrese el telefono">
+                                <input type="text" class="form-control" id="telefono" placeholder="Ingrese el telefono" maxlength="20" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="correo">Correo</label>
-                                <input type="text" class="form-control" id="correo" placeholder="Ingrese el correo">
+                                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo" maxlength="255" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="contrasena">Contraseña</label>
-                                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese la contraseña">
+                                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese la contraseña" maxlength="255" required>
                             </div>
                         </div>
                     </div>

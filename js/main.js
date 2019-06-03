@@ -8,6 +8,13 @@ $(document).ready(function() {
 
         insertarRegistro(nombre, direccion, telefono, correo, contrasena);
     }); 
+
+    $('#btn-admin').click(function() {
+        var correoAdmin = $('#correoAdmin').val();
+        var contrasenaAdmin = $('#contrasenaAdmin').val();
+
+        insertarAdmin(correoAdmin, contrasenaAdmin);
+    });
 });
 
 function insertarRegistro(nombre, direccion, telefono, correo, contrasena) {
@@ -18,10 +25,30 @@ function insertarRegistro(nombre, direccion, telefono, correo, contrasena) {
         correo: correo,
         contrasena: contrasena
     };
-
+    
     $.ajax({
         type: 'POST',
         url: 'services/insertarRegistro.php',
+        data: parametros,
+        success: function(response) {
+            if(response == 1) {
+                alertify.success('Agregado con exito');
+            }else {
+                alertify.error('Fallo el servidor');
+            }
+        }
+    });
+}
+
+function insertarAdmin(correoAdmin, contrasenaAdmin) {
+    var parametros = {
+        correoAdmin: correoAdmin,
+        contrasenaAdmin: contrasenaAdmin
+    };
+
+    $.ajax({
+        type: 'POST',
+        url: 'services/insertarAdmin.php',
         data: parametros,
         success: function(response) {
             if(response == 1) {
