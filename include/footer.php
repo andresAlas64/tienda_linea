@@ -9,17 +9,17 @@
                     </p>
                 </div>
                 <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-3 mb-md-0 mb-3">
+                <div class="col-md-4 mb-md-0 mb-3">
                     <h5 class="text-footer">Contacto</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Facebook/tienda</a>
+                            <a href="#">Redes: facebook/tienda</a>
                         </li>
                         <li>
-                            <a href="#">tienda@gmail.com</a>
+                            <a href="#">Correo: tecnosoft.milenio@gmail.com</a>
                         </li>
                         <li>
-                            <a href="#">Tel: 8535-4465</a>
+                            <a href="#">Tel: 2236-7391 / 2236-7093</a>
                         </li>
                         <li>
                             <a href="#">Dir: San Juan de Tidas</a>

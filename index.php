@@ -6,7 +6,7 @@
 ?>
 <!-- Carousel -->
 <div class="bd-example mb-5">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -14,13 +14,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/banner.png" class="d-block w-100" alt="Imagen uno">
+        <img src="img/banner.png" class="d-block w-100" class="img-responsive" alt="Imagen uno"> <!-- img 1600x600 -->
       </div>
       <div class="carousel-item">
-        <img src="img/banner.png" class="d-block w-100" alt="Imagen dos">
+        <img src="img/banner.png" class="d-block w-100" class="img-responsive" alt="Imagen dos">
       </div>
       <div class="carousel-item">
-        <img src="img/banner.png" class="d-block w-100" alt="Imagen tres">
+        <img src="img/banner.png" class="d-block w-100" class="img-responsive" alt="Imagen tres">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

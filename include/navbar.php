@@ -13,7 +13,7 @@
                     <a class="nav-link" href="iniciarSesion.php">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="registrarse.php">Registrarse</a>
+                    <a class="nav-link" href="formRegistrarse.php">Registrarse</a>
                 </li>
                 <!--<li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Carrito</a>

@@ -10,5 +10,7 @@
         VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada')";
 
         echo $result = mysqli_query($con, $query);
+
+        header('Location: ../formRegistrarse.php');
     }
 ?>
