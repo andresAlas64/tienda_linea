@@ -37,7 +37,7 @@
 
 <!-- Titulo -->
 <div id="productos" class="container">
-    <h2 class="mb-4 color-gray">Catalogo de productos</h2>
+    <h1 class="mb-4 color-gray">Catalogo de productos</h1>
 </div>
 <!-- Titulo -->
 

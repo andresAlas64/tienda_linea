@@ -3,8 +3,8 @@
 
     session_start();
 
-    $correo = $_POST['correo'];
-    $contrasena = $_POST['contrasena'];
+    $correo = mysqli_real_escape_string($con, $_POST['correo']);
+    $contrasena = mysqli_real_escape_string($con, $_POST['contrasena']);
 
     $administrador = mysqli_query($con, "SELECT * FROM administrador WHERE correo = '$correo'");
     $usuario = mysqli_query($con, "SELECT * FROM usuario WHERE correo = '$correo'");
@@ -31,7 +31,11 @@
 
             exit();
         }else {
-            echo 'La contraseña no es válida.';
+            echo '<script type="text/javascript">
+                alert("La contraseña no es válida");
+
+                window.location.href="../formIniciarSesion.php";
+            </script>';
         }
     }
     else if(mysqli_num_rows($usuario) > 0) {
@@ -42,11 +46,17 @@
 
             exit();
         }else {
-            echo 'La contraseña no es válida.';
+            echo '<script type="text/javascript">
+                alert("La contraseña no es válida");
+
+                window.location.href="../formIniciarSesion.php";
+            </script>';
         }
     }else {
-        $mensaje = 'El correo o la contraseña son incorrectos';
+        echo '<script type="text/javascript">
+            alert("El correo o la contraseña son incorrectos");
 
-        echo $mensaje;
+            window.location.href="../formIniciarSesion.php";
+        </script>';
     }
 ?>

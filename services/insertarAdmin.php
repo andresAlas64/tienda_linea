@@ -10,5 +10,7 @@
         VALUES ('$correoAdmin', '$contrasenaEncriptada')";
 
         echo $result = mysqli_query($con, $query);
+
+        header('Location: ../agregarAdmin.php');
     }
 ?>

@@ -11,7 +11,7 @@
 
     //echo 'El administrador es: ' . $administrador;
 
-    $query = "SELECT * FROM administrador";
+    $query = "SELECT correo FROM administrador";
 
     $result = mysqli_query($con, $query);
 
@@ -24,7 +24,6 @@
                         <thead>
                             <tr>
                                 <th>Correo</th>
-                                <th>Contraseña</th>
                                 <th class='text-center'>Editar</th>
                                 <th class='text-center'>Eliminar</th>
                             </tr>
@@ -33,7 +32,6 @@
                         while($fila = mysqli_fetch_array($result)) {
                             echo "<tr>
                                 <td>".$fila['correo']."</td>
-                                <td>".$fila['clave']."</td>
                                 <td class='text-center'><a href='#' class='btn btn-color btn-sm'><i class='fas fa-pencil-alt'></i></a></td>
                                 <td class='text-center'><a href='#' class='btn btn-color btn-sm'><i class='fas fa-trash-alt'></i></a></td>
                             </tr>";

@@ -10,7 +10,7 @@
                     <a class="nav-link" href="#productos">Productos <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iniciarSesion.php">Iniciar sesión</a>
+                    <a class="nav-link" href="formIniciarSesion.php">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="formRegistrarse.php">Registrarse</a>
