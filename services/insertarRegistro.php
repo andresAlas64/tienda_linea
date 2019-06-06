@@ -1,16 +1,18 @@
 <?php
-    insertarRegistro($_POST['nombre'], $_POST['direccion'], $_POST['telefono'], $_POST['correo'], $_POST['contrasena']);
+    include_once 'conexion.php';
 
-    function insertarRegistro($nombre, $direccion, $telefono, $correo, $contrasena) {
-        include_once 'conexion.php';
+    $nombre = mysqli_real_escape_string($con, $_POST['nombre']);
+    $direccion = mysqli_real_escape_string($con, $_POST['direccion']);
+    $telefono = mysqli_real_escape_string($con, $_POST['telefono']);
+    $correo = mysqli_real_escape_string($con, $_POST['correo']);
+    $contrasena = mysqli_real_escape_string($con, $_POST['contrasena']);
 
-        $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
+    $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
 
-        $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave)
-        VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada')";
+    $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave)
+    VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada')";
 
-        echo $result = mysqli_query($con, $query);
+    echo $result = mysqli_query($con, $query);
 
-        header('Location: ../formRegistrarse.php');
-    }
+    header('Location: ../formRegistrarse.php');
 ?>

@@ -60,6 +60,8 @@ function validar() {
         alertify.warning('El telefono ingresado no es numero');
 
         return false;
+    }else {
+        alertify.success('Se agrego el usuario');
     }
 }
 
@@ -90,5 +92,7 @@ function validarAdmin() {
         alertify.warning('El correo no es valido');
 
         return false;
+    }else {
+        alertify.success('Se agrego el administrador');
     }
 }
