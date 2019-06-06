@@ -44,7 +44,7 @@ body {
 }
 
 .bg-color-card {
-    background: #F5F5F5;
+    background: #F0F0F0;
 }
 
 .text-footer {
@@ -63,3 +63,14 @@ footer, a:link {
     text-decoration: none;
 }
 
+#labelFile {
+    padding: 6px 12px;
+    background: #0336FF; 
+    display: table;
+    color: #F5F5F5;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}
