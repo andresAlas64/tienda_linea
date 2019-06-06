@@ -42,148 +42,37 @@
 <!-- Titulo -->
 
 <!-- Card -->
-<section class="mb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="..." width="400px">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, facilis dicta doloremque numquam non quam alias minima? Quidem fugiat quam sit impedit repudiandae illo aperiam odio distinctio. Ullam, eius ut!</p>
+<div class="container">
+    <div class="row">
+        <?php
+            include_once 'services/conexion.php';
+
+            $query = "SELECT * FROM producto";
+
+            $result = mysqli_query($con, $query);
+                    
+            while($fila = mysqli_fetch_array($result)) {
+                echo "<div class='col-md-3 mb-4'> 
+                    <div class='card' style='width: 100%;'>
+                        <img src='$fila[imagen]' class='card-img-top'></img>
+                        <div class='card-body bg-color-card'>
+                            <h5 class='card-title'>$fila[titulo]</h5>
+                            <p class='text-color'>Precio: $fila[precio]</p>
+                            <p>
+                                <a class='btn btn-color btn-block' data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample'>
+                                    Ver más
+                                </a>
+                            </p>    
+                            <div class='collapse' id='collapseExample'>
+                                <p>$fila[descripcion]</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam inventore corrupti illo vero tempore hic a impedit accusamus nemo? Aliquid vero atque, reiciendis sapiente adipisci quaerat reprehenderit quae. Temporibus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam inventore corrupti illo vero tempore hic a impedit accusamus nemo? Aliquid vero atque, reiciendis sapiente adipisci quaerat reprehenderit quae. Temporibus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample4">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam inventore corrupti illo vero tempore hic a impedit accusamus nemo? Aliquid vero atque, reiciendis sapiente adipisci quaerat reprehenderit quae. Temporibus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample5">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam inventore corrupti illo vero tempore hic a impedit accusamus nemo? Aliquid vero atque, reiciendis sapiente adipisci quaerat reprehenderit quae. Temporibus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample6">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi recusandae nam consequatur quam suscipit ratione corporis, consequuntur voluptates vero quas. Commodi quae nostrum, corrupti animi in magnam cumque harum!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample7">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi recusandae nam consequatur quam suscipit ratione corporis, consequuntur voluptates vero quas. Commodi quae nostrum, corrupti animi in magnam cumque harum!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card" style="width: 100%;">
-                    <img src="img/ps4.png" class="card-img-top" alt="...">
-                    <div class="card-body bg-color-card">
-                        <h5 class="card-title">Control ps4</h5>
-                        <p class="text-color">Precio: $200.99</p>
-                        <p>
-                        <a class="btn btn-color btn-block" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
-                            Ver más
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample8">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto commodi recusandae nam consequatur quam suscipit ratione corporis, consequuntur voluptates vero quas. Commodi quae nostrum, corrupti animi in magnam cumque harum!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </div>";
+            }
+        ?>
     </div>
-</section>
+</div>
 <!-- Card -->
 <?php
     include_once 'include/docCierre.php';
