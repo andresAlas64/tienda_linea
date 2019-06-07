@@ -7,16 +7,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Carrito<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="productoUsuario.php">Productos<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="usuario.php">Panel usuario</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="services/cerrarSesion.php">Cerrar sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
                 </li>
             </ul>
         </div>

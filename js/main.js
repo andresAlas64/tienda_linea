@@ -21,8 +21,15 @@ function validar() {
 
     expresion = /\w+@\w+\.+[a-z]/;
 
+    expresionNombre = /[A-Za-z]/;
+
     if(nombre === '' || direccion === '' || telefono === '' || correo === '' || contrasena === '') {
         alertify.warning('Todos los campos son obligatorios');
+
+        return false;
+    }
+    else if(!expresionNombre.test(nombre)) {
+        alertify.warning('El nombre solo puede tener letras');
 
         return false;
     }
@@ -100,7 +107,7 @@ function validarAdmin() {
 function eliminarProducto(id) {
     alertify.confirm("Estas seguro de que lo deseas eliminar",
     function(){
-        alertify.success('Ok');
+        //alertify.success('Ok');
 
         window.location = "http://localhost/tienda/services/eliminarProducto.php?id="+id;
     },

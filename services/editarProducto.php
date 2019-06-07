@@ -8,7 +8,7 @@
     
     $imagen = $_FILES['imagen']['name'];
     $ruta =  $_FILES['imagen']['tmp_name'];
-    $destino = 'img/imgProducto/' . $imagen;
+    $destino = '../img/imgProducto/' . $imagen;
     copy($ruta, $destino);
 
     $query = "UPDATE producto SET titulo='$titulo', precio='$precio', descripcion='$descripcion', imagen='$destino'

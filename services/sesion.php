@@ -27,7 +27,7 @@
         if(password_verify($contrasena, $hashAdmin)) {
             $_SESSION['administrador'] = "$correo";
 
-            header("Location: ../agregarProducto.php"); // administrador.php
+            header("Location: ../listaProducto.php"); // administrador.php
 
             exit();
         }else {
@@ -40,7 +40,7 @@
         if(password_verify($contrasena, $hashUsuario)) {
             $_SESSION['usuario'] = "$correo";
 
-            header("Location: ../usuario.php");
+            header("Location: ../productoUsuario.php");
 
             exit();
         }else {

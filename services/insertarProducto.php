@@ -7,7 +7,7 @@
 
     $imagen = $_FILES['imagen']['name'];
     $ruta =  $_FILES['imagen']['tmp_name'];
-    $destino = 'img/imgProducto/' . $imagen;
+    $destino = '../img/imgProducto/' . $imagen;
     copy($ruta, $destino);
 
     $query = "INSERT INTO producto (titulo, precio, descripcion, imagen)
@@ -15,5 +15,5 @@
 
     $result = mysqli_query($con, $query);
 
-    header('Location: ../agregarProducto.php');
+    header('Location: ../listaProducto.php');
 ?>
