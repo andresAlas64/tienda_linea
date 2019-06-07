@@ -47,35 +47,38 @@
         <?php
             include_once 'services/conexion.php';
 
-            $query = "SELECT titulo, precio, descripcion, imagen FROM producto";
+            $query = "SELECT id, titulo, precio, descripcion, imagen FROM producto";
 
             $result = mysqli_query($con, $query);
-
+    
             $i = 0;
-                    
+
             while($fila = mysqli_fetch_array($result)) {
-                echo "<div class='col-md-3 mb-5'> 
+                echo "<div class='col-md-3 mb-4'> 
                     <div class='card' style='width: 100%;'>
                         <img src='$fila[imagen]' class='card-img-top'></img>
                         <div class='card-body bg-color-card'>
                             <h5 class='card-title'>$fila[titulo]</h5>
                             <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
                             <p>
-                                <a class='btn btn-color btn-block' data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample'>
+                                <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
                                     Ver más
                                 </a>
                             </p>    
-                            <div class='collapse' id='collapseExample'>
+                            <div class='collapse' id='id$fila[id]'>
                                 <p>$fila[descripcion]</p>
                             </div>
                         </div>
                     </div>
                 </div>";
+
+                $i++;
             }
         ?>
     </div>
 </div>
 <!-- Card -->
+<div class="mb-4"></div>
 <?php
     include_once 'include/docCierre.php';
     include_once 'include/footer.php';
