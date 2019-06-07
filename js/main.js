@@ -96,3 +96,15 @@ function validarAdmin() {
         alertify.success('Se agrego el administrador');
     }
 }
+
+function eliminarProducto(id) {
+    alertify.confirm("Estas seguro de que lo deseas eliminar",
+    function(){
+        alertify.success('Ok');
+
+        window.location = "http://localhost/tienda/services/eliminarProducto.php?id="+id;
+    },
+    function(){
+        alertify.error('Cancelar');
+    });
+}

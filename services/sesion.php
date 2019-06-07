@@ -27,13 +27,11 @@
         if(password_verify($contrasena, $hashAdmin)) {
             $_SESSION['administrador'] = "$correo";
 
-            header("Location: ../administrador.php");
+            header("Location: ../agregarProducto.php"); // administrador.php
 
             exit();
         }else {
             echo '<script type="text/javascript">
-                alert("La contraseña no es válida");
-
                 window.location.href="../formIniciarSesion.php";
             </script>';
         }
@@ -47,15 +45,11 @@
             exit();
         }else {
             echo '<script type="text/javascript">
-                alert("La contraseña no es válida");
-
                 window.location.href="../formIniciarSesion.php";
             </script>';
         }
     }else {
         echo '<script type="text/javascript">
-            alert("El correo o la contraseña son incorrectos");
-
             window.location.href="../formIniciarSesion.php";
         </script>';
     }
