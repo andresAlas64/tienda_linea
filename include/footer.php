@@ -1,4 +1,4 @@
-<footer class="page-footer font-small pt-4 bg-color">
+<!--<footer class="page-footer font-small pt-4 bg-color">
     <div class="container">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
@@ -30,6 +30,16 @@
         </div>
         <div class="footer-copyright text-center py-3">
             <span class="text-footer">© 2019 - Derechos reservados</span>
+        </div>
+    </div>
+</footer>-->
+
+<footer class="text-center page-footer py-4 bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-white margen-top">
+                <p class='mb-0'>© 2019 - Derechos reservados</p>
+            </div>
         </div>
     </div>
 </footer>

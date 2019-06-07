@@ -1,6 +1,6 @@
 /* Efecto desplaza hacia abajo */
 
-/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -8,7 +8,7 @@
             behavior: 'smooth'
         });
     });
-});*/
+});
 
 function validar() {
     var nombre, direccion, telefono, correo, contrasena, expresion;
@@ -114,4 +114,35 @@ function eliminarProducto(id) {
     function(){
         alertify.error('Cancelar');
     });
+}
+
+function validarProducto() {
+    var titulo, precio, descripcion;
+
+    titulo = document.getElementById('titulo').value;
+    precio = document.getElementById('precio').value;
+    descripcion = document.getElementById('descripcion').value;
+
+    expresionPrecio = /[0-9,]+[^.]/;
+
+    if(titulo === '' || precio === '' || descripcion === '') {
+        alertify.warning('Todos los campos son obligatorios');
+
+        return false;
+    }
+    else if(titulo.length > 60) {
+        alertify.warning('El nombre tiene que ser menor a 60 caracteres');
+
+        return false;
+    }
+    else if(!expresionPrecio.test(precio)) {
+        alertify.warning('El precio solo puede tener numeros y punto decimal');
+
+        return false;
+    }
+    else if(descripcion.length > 140) {
+        alertify.warning('La descripcion tiene que ser menor a 140 caracteres');
+
+        return false;
+    }
 }

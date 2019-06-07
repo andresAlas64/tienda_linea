@@ -12,24 +12,24 @@
     </div>
 </div>
 <div class="container">
-    <form action="services/insertarProducto.php" method="POST" enctype="multipart/form-data">
+    <form action="services/insertarProducto.php" method="POST" enctype="multipart/form-data" onsubmit="return validarProducto();">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="titulo">Titulo</label>
-                    <input type="text" class="form-control" name="titulo" aria-describedby="emailHelp" placeholder="Ingrese el titulo del producto">
+                    <input type="text" class="form-control" id="titulo" name="titulo" aria-describedby="emailHelp" placeholder="Ingrese el titulo del producto" autofocus maxlength="60">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="precio">Precio</label>
-                    <input type="number" class="form-control" name="precio" aria-describedby="emailHelp" placeholder="Ingrese el precio del producto">
+                    <input type="number" class="form-control" id="precio" name="precio" aria-describedby="emailHelp" placeholder="Ingrese el precio del producto">
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="descripcion">Descripcion</label>
-                    <textarea class="form-control" name="descripcion" rows="3" placeholder="Ingrese la descripcion del producto"></textarea>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Ingrese la descripcion del producto" maxlength="140"></textarea>
                 </div>
                 <div class="form-group">
                     <label id="labelFile"><i class="fas fa-folder"></i> Ingrese el archivo
