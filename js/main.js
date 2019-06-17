@@ -146,3 +146,38 @@ function validarProducto() {
         return false;
     }
 }
+
+$(document).ready(function() {
+    $('#buscarProducto').focus();
+
+    var texto = $('#buscarProducto').val();
+
+    $.ajax({
+        type: 'POST',
+        url:  'services/buscarProducto.php',
+        data: {'texto': texto},
+        success: function(response) {
+              $("#tablaProductos").html(response);
+        }
+    });
+
+    $('#buscarProducto').on('keyup', function(){
+        var texto = $('#buscarProducto').val();
+
+        $.ajax({
+            type: 'POST',
+            url:  'services/buscarProducto.php',
+            data: {'texto': texto},
+            beforeSend: function() {
+                    //$("#tablaProductos").html("<p align='center'><img src='img/ajaxloader.gif'/></p>");
+                    console.log('Buscando');
+            },
+            error: function() {
+                    alert("error petición ajax");
+            },
+            success: function(response) {
+                    $("#tablaProductos").html(response);
+            }
+        });
+    });
+});
