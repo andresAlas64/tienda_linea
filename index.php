@@ -46,9 +46,9 @@
   <div class="row">
     <div class="col-md-12">
       <div class="input-group mb-5">
-        <input type="text" class="form-control" placeholder="Buscar productos" aria-label="Recipient's username" aria-describedby="button-addon2" id="buscarProducto">
+        <input type="text" class="form-control" placeholder="Buscar productos" aria-label="Recipient's username" aria-describedby="button-addon2" id="buscarProducto" maxlength="60">
         <div class="input-group-append">
-          <button class="btn btn-color" type="button" id="button-addon2">Limpiar</button>
+          <button class="btn btn-color" type="button" id="button-addon2" onclick="limpiar();">Limpiar</button>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
 <!-- Buscador -->
 
 <!-- Card -->
-<div id="tablaProductos" class='mb-5'></div>
+<div id="tablaProductos" class='mb-4'></div>
 <!-- Card -->
 <div class="mb-4"></div>
 <?php

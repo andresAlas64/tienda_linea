@@ -147,6 +147,18 @@ function validarProducto() {
     }
 }
 
+function limpiar() {
+    document.getElementById('buscarProducto').value = '';
+
+	location.reload();
+}
+
+function limpiarUsuario() {
+    document.getElementById('buscarProductoUsuario').value = '';
+
+	location.reload();
+}
+
 $(document).ready(function() {
     $('#buscarProducto').focus();
 
@@ -177,6 +189,41 @@ $(document).ready(function() {
             },
             success: function(response) {
                     $("#tablaProductos").html(response);
+            }
+        });
+    });
+    
+    /**/
+
+    $('#buscarProductoUsuario').focus();
+
+    var texto = $('#buscarProductoUsuario').val();
+
+    $.ajax({
+        type: 'POST',
+        url:  'services/buscarProductoUsuario.php',
+        data: {'texto': texto},
+        success: function(response) {
+              $("#tablaProductoUsuario").html(response);
+        }
+    });    
+
+    $('#buscarProductoUsuario').on('keyup', function(){
+        var texto = $('#buscarProductoUsuario').val();
+
+        $.ajax({
+            type: 'POST',
+            url:  'services/buscarProductoUsuario.php',
+            data: {'texto': texto},
+            beforeSend: function() {
+                    //$("#tablaProductos").html("<p align='center'><img src='img/ajaxloader.gif'/></p>");
+                    console.log('Buscando');
+            },
+            error: function() {
+                    alert("error petición ajax");
+            },
+            success: function(response) {
+                    $("#tablaProductoUsuario").html(response);
             }
         });
     });
