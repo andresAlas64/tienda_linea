@@ -46,10 +46,18 @@
                             <h5 class='card-title'>$fila[titulo]</h5>
                             <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
                             <p>
-                                <a href='#' class='btn btn-color btn-block'>Agregar al carrito</a>
-                                <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
-                                    Mas información 
-                                </a>
+                                <div class='col-md-12'>
+                                    <div class='row'>
+                                        <div class='col-md-6 btn-verMas'>
+                                            <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
+                                                Ver más
+                                            </a>
+                                        </div>
+                                        <div class='col-md-6 btn-carrito'>
+                                            <a href='#' class='btn btn-color btn-block'>Carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
                                     
                             </p>    
                             <div class='collapse' id='id$fila[id]'>

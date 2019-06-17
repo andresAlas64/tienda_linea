@@ -12,8 +12,8 @@ body {
 }
 
 .color-gray {
-    color: #484848;
-    font-size: 1.5em;
+    color: #212121;
+    font-size: 1.7em;
 }
 
 .card {
@@ -73,4 +73,14 @@ footer, a:link {
 
 input[type="file"] {
     display: none;
+}
+
+.btn-verMas {
+    padding-left: 0;
+    padding-right: 2.5px;
+}
+
+.btn-carrito {
+    padding-right: 0;
+    padding-left: 2.5px;
 }

@@ -18,9 +18,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="formRegistrarse.php">Registrarse</a>
                 </li>
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Carrito</a>
-                </li>-->
             </ul>
         </div>
     </div>
