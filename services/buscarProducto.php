@@ -11,7 +11,7 @@
     $row_count = mysqli_num_rows($result);
 
     if($row_count == 0) {
-        echo "<p class='text-center mb-5'>No se han encontrado resultados para '$b'</p>";
+        echo "<p class='text-center mb-5'>No se han encontrado resultados para <span class='msj_color'>$b</span></p>";
     }else {
         echo "<div class='container'>
             <div class='row'>";
@@ -28,7 +28,7 @@
                                 <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
                                 <p>
                                     <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
-                                        Más
+                                        Mas
                                     </a>
                                 </p>    
                                 <div class='collapse' id='id$fila[id]'>

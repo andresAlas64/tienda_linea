@@ -51,6 +51,10 @@ body {
     color: #F5F5F5;
 }
 
+footer {
+    display: block;
+}
+
 footer, a {
     color: #F5F5F5;
 }
@@ -75,12 +79,15 @@ input[type="file"] {
     display: none;
 }
 
-.btn-verMas {
-    padding-left: 0;
-    padding-right: 2.5px;
+.msj_color {
+    color: #0336FF;
 }
 
-.btn-carrito {
-    padding-right: 0;
-    padding-left: 2.5px;
+.alert-color {
+    background: #F5F5F5;
+}
+
+.badge-color {
+    background: #0336FF;
+    color: #F5F5F5;
 }

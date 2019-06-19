@@ -1,5 +1,6 @@
 <?php
     include_once 'conexion.php';
+    include_once 'config.php';
 
     $b = mysqli_real_escape_string($con, $_POST['texto']);
 
@@ -11,7 +12,7 @@
     $row_count = mysqli_num_rows($result);
 
     if($row_count == 0) {
-        echo "<p class='text-center mb-5'>No se han encontrado resultados para '$b'</p>";
+        echo "<p class='text-center mb-5'>No se han encontrado resultados para <span class='msj_color'>$b</span></p>";
     }else {
         echo "<div class='container'>
             <div class='row'>";
@@ -27,19 +28,18 @@
                                 <h5 class='card-title'>$fila[titulo]</h5>
                                 <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
                                 <p>
-                                    <div class='col-md-12'>
-                                        <div class='row'>
-                                            <div class='col-md-6 btn-verMas'>
-                                                <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
-                                                    Más
-                                                </a>
-                                            </div>
-                                            <div class='col-md-6 btn-carrito'>
-                                                <a href='#' class='btn btn-color btn-block'>Carrito</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </p>    
+                                    <form action='' method='POST'>
+                                        <input type='hidden' name='id' id='id' value=''>
+                                        <input type='hidden' name='titulo' id='titulo' value='$fila[titulo]'>
+                                        <input type='hidden' name='precio' id='precio' value='$fila[precio]'>
+                                        <input type='hidden' name='cantidad' id='cantidad' value='1'>
+
+                                        <button type='submit' class='btn btn-color' name='btnAccion'>Agregar al carrito</button>
+                                        <a class='btn btn-color' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
+                                            Mas
+                                        </a>    
+                                    </form>   
+                                </p> 
                                 <div class='collapse' id='id$fila[id]'>
                                     <p>$fila[descripcion]</p>
                                 </div>

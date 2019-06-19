@@ -3,6 +3,7 @@
 
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbarUsuario.php';
+    include_once 'services/config.php';
     //include_once 'services/conexion.php';
 
     session_start();
@@ -49,25 +50,25 @@
                 <input type="hidden" name="id" value="<?php echo $consulta[4]?>">
                 <div class='form-group'>
                     <label for='nombre'>Nombre</label>
-                    <input type='text' class='form-control' name='nombre' id='nombre' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[0])?>' placeholder='Editar el nombre'>
+                    <input type='text' class='form-control' name='nombre' id='nombre' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[0]);?>' placeholder='Editar el nombre'>
                 </div>
             </div>
             <div class='col-md-8'>
                 <div class='form-group'>
                     <label for='dir'>Dirección</label>
-                    <input type='text' class='form-control' name='dir' id='dir' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[1])?>' placeholder='Editar la dirección'>
+                    <input type='text' class='form-control' name='dir' id='dir' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[1]);?>' placeholder='Editar la dirección'>
                 </div>
             </div>
             <div class='col-md-6'>
                 <div class='form-group'>
                     <label for='telefono'>Telefono</label>
-                    <input type='text' class='form-control' name='telefono' id='telefono' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[2])?>' placeholder='Editar el telefono'>
+                    <input type='text' class='form-control' name='telefono' id='telefono' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[2]);?>' placeholder='Editar el telefono'>
                 </div>
             </div>
             <div class='col-md-6'>
                 <div class='form-group'>
                     <label for='correo'>Correo</label>
-                    <input type='text' class='form-control' name='correo' id='correo' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[3])?>' placeholder='Editar el correo'>
+                    <input type='text' class='form-control' name='correo' id='correo' aria-describedby='emailHelp' value='<?php echo rtrim($consulta[3]);?>' placeholder='Editar el correo'>
                 </div>
             </div>
             <div class="col-md-12">

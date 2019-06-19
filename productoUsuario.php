@@ -4,6 +4,14 @@
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbarUsuario.php';
 ?>
+<div class="container">
+  <div class="alert alert-color">
+    Información del carrito
+    <a href="#" class="badge badge-color">Ver el carrito</a>
+  </div>
+</div>
+
+
 <!-- Titulo -->
 <div id="productos" class="container">
     <h2 class="mb-3 color-gray">Agregar productos al carrito</h2>
@@ -24,9 +32,12 @@
   </div>
 </div>
 <!-- Buscador -->
+
+
 <div id="tablaProductoUsuario" class='mb-4'></div>
+
 <!--<div class="mb-4"></div>-->
 <?php
-    include_once 'include/docCierre.php';
-    include_once 'include/footer.php';
+  include_once 'include/docCierre.php';
+  include_once 'include/footer.php';
 ?>

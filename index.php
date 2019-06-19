@@ -59,7 +59,6 @@
 <!-- Card -->
 <div id="tablaProductos" class='mb-4'></div>
 <!-- Card -->
-<div class="mb-4"></div>
 <?php
     include_once 'include/docCierre.php';
     include_once 'include/footer.php';
