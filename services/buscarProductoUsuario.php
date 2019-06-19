@@ -31,7 +31,7 @@
                                         <div class='row'>
                                             <div class='col-md-6 btn-verMas'>
                                                 <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
-                                                    Ver más
+                                                    Más
                                                 </a>
                                             </div>
                                             <div class='col-md-6 btn-carrito'>

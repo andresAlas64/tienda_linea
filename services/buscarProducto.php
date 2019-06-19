@@ -28,7 +28,7 @@
                                 <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
                                 <p>
                                     <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
-                                        Ver más
+                                        Más
                                     </a>
                                 </p>    
                                 <div class='collapse' id='id$fila[id]'>

@@ -6,7 +6,7 @@
 ?>
 <!-- Titulo -->
 <div id="productos" class="container">
-    <h2 class="mb-3 color-gray">Agrega productos al carrito</h2>
+    <h2 class="mb-3 color-gray">Agregar productos al carrito</h2>
 </div>
 <!-- Titulo -->
 

@@ -13,7 +13,7 @@ body {
 
 .color-gray {
     color: #212121;
-    font-size: 1.65em;
+    font-size: 1.5em;
 }
 
 .card {
@@ -44,19 +44,12 @@ body {
 }
 
 .bg-color-card {
-    background: #F0F0F0;
+    background: #F5F5F5;
 }
 
 .text-footer {
     color: #F5F5F5;
 }
-
-/*footer {
-   
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}*/
 
 footer, a {
     color: #F5F5F5;
