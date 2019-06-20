@@ -6,7 +6,7 @@
     include_once 'services/config.php';
     //include_once 'services/conexion.php';
 
-    session_start();
+    //session_start();
 
     /*if(!isset($_SESSION)) 
     { 

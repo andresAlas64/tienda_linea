@@ -6,15 +6,17 @@
     include_once 'services/carrito.php';
 ?>
 <div class="container">
-  <div class="alert alert-color">
-    Información del producto: <br/>
+  <?php if($mensaje != '') { ?>
+    <div class="alert alert-color">
+      Información del producto <br/>
 
-    <?php 
-      echo $mensaje;
-    ?>
+      <?php 
+        echo $mensaje;
+      ?>
 
-    <a href="#" class="badge badge-color">Ver el carrito</a>
-  </div>
+      <a href="mostrarCarrito.php" class="badge badge-color">Ver el carrito</a>
+    </div>
+  <?php } ?>
 </div>
 
 

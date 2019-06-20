@@ -12,7 +12,7 @@
                 if(is_numeric(openssl_decrypt($_POST['id'], COD, KEY))) {
                     $id = openssl_decrypt($_POST['id'], COD, KEY);
 
-                    $mensaje.='El id es ' . $id . '<br/>';
+                    //$mensaje.='El id es ' . $id . '<br/>';
                 }else {
                     $mensaje.='Id incorrecto ' . $id . '<br/>';
                 }
@@ -56,20 +56,34 @@
                     );
 
                     $_SESSION['CARRITO'][0] = $producto;
+
+                    $mensaje = 'Producto agregado al carrito';
                 }else {
-                    $numeroProductos = count($_SESSION['CARRITO']);
+                    $idProductos = array_column($_SESSION['CARRITO'], 'ID');
 
-                    $producto = array(
-                        'ID' => $id,
-                        'NOMBRE' => $titulo,
-                        'CANTIDAD' => $cantidad,
-                        'PRECIO' => $precio
-                    );
+                    if(in_array($id, $idProductos)) {
+                        echo "<script>alert('El producto ya ha sido seleccionado');</script>";
 
-                    $_SESSION['CARRITO'][$numeroProductos] = $producto;
+                        $mensaje = '';
+                    }else {
+                        $numeroProductos = count($_SESSION['CARRITO']);
+
+                        $producto = array(
+                            'ID' => $id,
+                            'NOMBRE' => $titulo,
+                            'CANTIDAD' => $cantidad,
+                            'PRECIO' => $precio
+                        );
+
+                        $_SESSION['CARRITO'][$numeroProductos] = $producto;
+
+                        $mensaje = 'Producto agregado al carrito';
+                        }
                 }
 
-                $mensaje = print_r($_SESSION, true);
+                //$mensaje = print_r($_SESSION, true);
+
+                //$mensaje = 'Producto agregado al carrito';
 
             break;
 
