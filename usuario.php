@@ -8,6 +8,11 @@
 
     session_start();
 
+    /*if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }*/
+
     $usuario = $_SESSION['usuario'];
 
     $consulta = counsultaUsuario($usuario);
@@ -19,6 +24,8 @@
         WHERE correo = '$usuario'";
 
         $result = mysqli_query($con, $query);
+
+        echo $result;
 
         $fila = mysqli_fetch_array($result, MYSQLI_ASSOC);
 

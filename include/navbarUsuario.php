@@ -1,3 +1,7 @@
+<?php
+    include_once 'services/carrito.php';
+?>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-color mb-5">
     <div class="container">
         <a class="navbar-brand" href="index.php" title="Inicio"><img src="img/codepen.png"></a>
@@ -16,7 +20,9 @@
                     <a class="nav-link" href="services/cerrarSesion.php">Cerrar sesión</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link" href="mostrarCarrito.php"><i class="fas fa-shopping-cart"></i> <?php
+                        echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
+                    ?></a>
                 </li>
             </ul>
         </div>
