@@ -21,6 +21,11 @@
                 while($fila = mysqli_fetch_array($result)) {
                     $imagen = substr($fila['imagen'], 3);
 
+                    $id = openssl_encrypt($fila['id'], COD, KEY);
+                    $titulo = openssl_encrypt($fila['titulo'], COD, KEY);
+                    $precio = openssl_encrypt($fila['precio'], COD, KEY);
+                    $cantidad = openssl_encrypt(1, COD, KEY);
+
                     echo "<div class='col-md-3 mb-4'> 
                         <div class='card' style='width: 100%;'>
                             <img src='$imagen' class='card-img-top'></img>
@@ -29,12 +34,12 @@
                                 <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
                                 <p>
                                     <form action='' method='POST'>
-                                        <input type='hidden' name='id' id='id' value=''>
-                                        <input type='hidden' name='titulo' id='titulo' value='$fila[titulo]'>
-                                        <input type='hidden' name='precio' id='precio' value='$fila[precio]'>
-                                        <input type='hidden' name='cantidad' id='cantidad' value='1'>
+                                        <input type='hidden' name='id' id='id' value='$id'>
+                                        <input type='hidden' name='titulo' id='titulo' value='$titulo'>
+                                        <input type='hidden' name='precio' id='precio' value='$precio'>
+                                        <input type='hidden' name='cantidad' id='cantidad' value='$cantidad'>
 
-                                        <button type='submit' class='btn btn-color' name='btnAccion'>Agregar al carrito</button>
+                                        <button type='submit' class='btn btn-color' name='btnAccion' value='Agregar'>Agregar al carrito</button>
                                         <a class='btn btn-color' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
                                             Mas
                                         </a>    

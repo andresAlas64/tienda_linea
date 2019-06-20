@@ -3,10 +3,16 @@
 
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbarUsuario.php';
+    include_once 'services/carrito.php';
 ?>
 <div class="container">
   <div class="alert alert-color">
-    Información del carrito
+    Información del producto: <br/>
+
+    <?php 
+      echo $mensaje;
+    ?>
+
     <a href="#" class="badge badge-color">Ver el carrito</a>
   </div>
 </div>
