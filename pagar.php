@@ -68,7 +68,7 @@
 
 <div class="container">
     <div class="jumbotron text-center bg-jumbotron">
-        <h1 class="display-4">Paso final</h1>
+        <h1 class="display-4">Procesar pago</h1>
         <hr class="my-4">
         <p class="lead">Estas a punto de pagar con paypal la cantidad de
             <h4>$<?php echo number_format($total, 2)?></h4>
@@ -94,8 +94,8 @@
         // Create a PayPal app: https://developer.paypal.com/developer/applications/create
 
         client: {
-            sandbox:    'AY3pH1g_SdJspdNKCx7ncttVjvgSXtEMXpM3maUmGxSt4kPLQVTf9vkSQy9adsIhI-yqermgJYb9cbsi',
-            production: '<insert production client id>'
+            sandbox:    'AePNFoGyEUaF0bwGQH7ucH4qIflY58hTIOb8JYpsb4DGnKNApLQPqFUoXpMAmLSYyY7bmiyel9XeBj5a',
+            production: 'AYtcmMivgNOOiQg0kjbi4ZdmgUU6nRRblXzdKpifUaiAcH05fv0-wrfXvL6XEeswGXzMo7O92A7vIgwL'
         },
 
         // Wait for the PayPal button to be clicked
@@ -105,9 +105,9 @@
                 payment: {
                     transactions: [
                         {
-                            amount: { total: '<?php echo $total?>', currency: 'MXN' }, 
-                            description:"Compra de productos a Develoteca:$0.01",
-                            custom:"Codigo"
+                            amount: { total: '<?php echo $total?>', currency: 'USD' }, 
+                            description:"Compra de productos a tecnosoft $<?php echo number_format($total, 2);?>",
+                            custom:"<?php echo $SID;?>#<?php echo openssl_encrypt($idVenta, COD, KEY);?>"
                         }
                     ]
                 }
@@ -119,7 +119,7 @@
         onAuthorize: function(data, actions) {
             return actions.payment.execute().then(function() {
                 console.log(data);
-                window.location="verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
+                window.location = "verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
             });
         }
     
