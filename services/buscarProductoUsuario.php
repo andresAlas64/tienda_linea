@@ -31,7 +31,7 @@
                             <img src='$imagen' class='card-img-top'></img>
                             <div class='card-body bg-color-card'>
                                 <h5 class='card-title'>$fila[titulo]</h5>
-                                <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
+                                <p class='text-color'>Precio ".'$'."$fila[precio]</p>
                                 <p>
                                     <form action='' method='POST'>
                                         <input type='hidden' name='id' id='id' value='$id'>

@@ -91,3 +91,7 @@ input[type="file"] {
     background: #0336FF;
     color: #F5F5F5;
 }
+
+.bg-jumbotron {
+    background: #F5F5F5;
+}

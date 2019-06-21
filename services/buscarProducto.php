@@ -25,7 +25,7 @@
                             <img src='$imagen' class='card-img-top'></img>
                             <div class='card-body bg-color-card'>
                                 <h5 class='card-title'>$fila[titulo]</h5>
-                                <p class='text-color'>Precio ".'₡'."$fila[precio]</p>
+                                <p class='text-color'>Precio ".'$'."$fila[precio]</p>
                                 <p>
                                     <a class='btn btn-color btn-block' data-toggle='collapse' href='#id$fila[id]' role='button' aria-expanded='false' aria-controls='collapseExample'>
                                         Mas
