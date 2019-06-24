@@ -4,7 +4,6 @@
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbarUsuario.php';
     include_once 'services/config.php';
-   // include_once 'services/conexion.php'
 ?>
 <?php
     if($_POST) {
@@ -46,7 +45,6 @@
     }
 ?>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-
 <style>
     
     /* Media query for mobile viewport */
@@ -65,7 +63,6 @@
     }
     
 </style>
-
 <div class="container">
     <div class="jumbotron text-center bg-jumbotron">
         <h1 class="display-4">Procesar pago</h1>
@@ -79,7 +76,6 @@
         </p>
     </div>
 </div>
-
 <script>
     paypal.Button.render({
         env: 'sandbox', // sandbox | production
@@ -126,7 +122,6 @@
     }, '#paypal-button-container');
 
 </script>
-
 <?php
     include_once 'include/docCierre.php';
 ?>

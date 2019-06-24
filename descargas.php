@@ -1,6 +1,5 @@
 <?php
     include_once 'include/docDeclaracion.php';
-    
     include_once 'services/config.php';
     include_once 'services/conexion.php';
 ?>
@@ -21,8 +20,6 @@
         $sentencia -> execute();
 
         $listaProductos = $sentencia -> fetchAll(PDO::FETCH_ASSOC);
-
-        //print_r($listaProductos);
 
         if($sentencia -> rowCount() > 0) {
             echo "Archivo en descarga";

@@ -1,6 +1,7 @@
 <?php
     session_start();
 
+    include_once 'include/docDeclaracion.php';
     include_once 'conexion.php';
     include_once 'config.php';
 
@@ -11,8 +12,6 @@
             case 'Agregar': 
                 if(is_numeric(openssl_decrypt($_POST['id'], COD, KEY))) {
                     $id = openssl_decrypt($_POST['id'], COD, KEY);
-
-                    //$mensaje.='El id es ' . $id . '<br/>';
                 }else {
                     $mensaje.='Id incorrecto ' . $id . '<br/>';
                 }
@@ -62,9 +61,7 @@
                     $idProductos = array_column($_SESSION['CARRITO'], 'ID');
 
                     if(in_array($id, $idProductos)) {
-                        echo "<script>alert('El producto ya ha sido seleccionado');</script>";
-
-                        $mensaje = '';
+                       $mensaje = '<span class="text-danger">El producto ya ha sido seleccionado</span>';
                     }else {
                         $numeroProductos = count($_SESSION['CARRITO']);
 
@@ -81,10 +78,6 @@
                         }
                 }
 
-                //$mensaje = print_r($_SESSION, true);
-
-                //$mensaje = 'Producto agregado al carrito';
-
             break;
 
             case 'Eliminar':
@@ -94,16 +87,15 @@
                     foreach($_SESSION['CARRITO'] as $indice => $producto) {
                         if($producto['ID'] == $id) {
                             unset($_SESSION['CARRITO'][$indice]);
-
-                            echo "<script>alert('Elemento eliminado');</script>";
                         }
                     }
 
-                    //$mensaje.='El id es ' . $id . '<br/>';
                 }else {
                     $mensaje.='Id incorrecto ' . $id . '<br/>';
                 }
             break;
         }
     }
+
+    include_once 'include/docCierre.php';
 ?>

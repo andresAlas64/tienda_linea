@@ -13,19 +13,16 @@
       <?php 
         echo $mensaje;
       ?>
-
+      
       <a href="mostrarCarrito.php" class="badge badge-color">Ver el carrito</a>
     </div>
   <?php } ?>
 </div>
-
-
 <!-- Titulo -->
 <div id="productos" class="container">
     <h2 class="mb-3 color-gray">Agregar productos al carrito</h2>
 </div>
 <!-- Titulo -->
-
 <!-- Buscador -->
 <div class="container">
   <div class="row">
@@ -40,11 +37,7 @@
   </div>
 </div>
 <!-- Buscador -->
-
-
 <div id="tablaProductoUsuario" class='mb-4'></div>
-
-<!--<div class="mb-4"></div>-->
 <?php
   include_once 'include/docCierre.php';
   include_once 'include/footer.php';

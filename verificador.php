@@ -4,9 +4,6 @@
     include_once 'services/config.php';
     include_once 'services/conexion.php';
 
-    /*$ClientID = 'AePNFoGyEUaF0bwGQH7ucH4qIflY58hTIOb8JYpsb4DGnKNApLQPqFUoXpMAmLSYyY7bmiyel9XeBj5a';
-    $Secret = 'EAIIbt1d2tj2weaqdEGrpjNqJ-XyeZk-DG5KZrtAPn1lYxPm0_XhikiojQMq9nYsE9kM-iiLZq7xGCrq';*/
-
     $Login = curl_init(LINKAPI.'/v1/oauth2/token');
 
     curl_setopt($Login, CURLOPT_RETURNTRANSFER, TRUE);
@@ -99,33 +96,29 @@
                     $sentencia->execute();
 
                     $listaProductos = $sentencia -> fetchAll(PDO::FETCH_ASSOC);
-
-                    //print_r($listaProductos);
                 }
             ?>
-            
             <div class="row">
                 <?php foreach($listaProductos as $producto) { ?>
                     <div class="col-md-3 mb-4"> 
                         <div class='card' style='width: 100%;'>
-                                <img src="<?php echo $imagen = substr($producto['imagen'], 3);?>" alt="" class='card-img-top'>
-                                <div class="card-body bg-color-card">
-                                    <h5 class='card-title'><?php echo $producto['titulo']?></h5>
-                                    <?php if($producto['descargado'] < DESCARGASPERMITIDAS) { ?>
-                                        <form method="post" action="descargas.php">
-                                            <input type="hidden" name="idVenta" value="<?php echo openssl_encrypt($claveVenta, COD, KEY); ?>">
-                                            <input type="hidden" name="idProducto" value="<?php echo openssl_encrypt($producto['id'], COD, KEY); ?>">
-                                            <button class="btn btn-color btn-block" type="submit"><i class="fas fa-file-download"></i> Descargar</button>     
-                                        </form>
-                                    <?php }else { ?>
-                                        <button class="btn btn-color btn-block" type="button" disebled><i class="fas fa-file-download"></i> Descargar</button>
-                                    <?php } ?>
-                                </div>
+                            <img src="<?php echo $imagen = substr($producto['imagen'], 3);?>" alt="" class='card-img-top'>
+                            <div class="card-body bg-color-card">
+                                <h5 class='card-title'><?php echo $producto['titulo']?></h5>
+                                <?php if($producto['descargado'] < DESCARGASPERMITIDAS) { ?>
+                                    <form method="post" action="descargas.php">
+                                        <input type="hidden" name="idVenta" value="<?php echo openssl_encrypt($claveVenta, COD, KEY); ?>">
+                                        <input type="hidden" name="idProducto" value="<?php echo openssl_encrypt($producto['id'], COD, KEY); ?>">
+                                        <button class="btn btn-color btn-block" type="submit"><i class="fas fa-file-download"></i> Descargar</button>     
+                                    </form>
+                                <?php }else { ?>
+                                    <button class="btn btn-color btn-block" type="button" disebled><i class="fas fa-file-download"></i> Descargar</button>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 <?php } ?>
             </div>
-           
         </p>
     </div>
 </div>

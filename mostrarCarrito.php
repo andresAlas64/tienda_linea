@@ -12,9 +12,7 @@
         </div>
     </div>
 </div>
-<!--  -->
 <?php if(!empty($_SESSION['CARRITO'])) { ?>
-<!--  -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -51,7 +49,6 @@
                             <td align="right"><h4><?php echo number_format($total, 2);?></h4></td>
                             <td></td>
                         </tr>
-
                         <tr>
                             <td colspan="5">
                                 <form action="pagar.php" method="post">
