@@ -64,7 +64,7 @@
                                             </small>
                                         </div>
                                         <button type="submit" name="btnAccion" class="btn btn-color btn-block" value="Proceder">
-                                            Proceder a pagar
+                                            <i class="fas fa-money-bill-wave-alt"></i> Proceder a pagar
                                         </button>
                                     </div>
                                 </form>

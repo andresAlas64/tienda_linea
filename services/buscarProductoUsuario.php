@@ -28,7 +28,7 @@
 
                     echo "<div class='col-md-3 mb-4'> 
                         <div class='card' style='width: 100%;'>
-                            <img src='$imagen' class='card-img-top'></img>
+                            <img src='$imagen' class='card-img-top'>
                             <div class='card-body bg-color-card'>
                                 <h5 class='card-title'>$fila[titulo]</h5>
                                 <p class='text-color'>Precio ".'$'."$fila[precio]</p>

@@ -11,6 +11,10 @@ body {
     background: #212121;
 }
 
+.color-titulo {
+    color: #212121;
+}
+
 .color-gray {
     color: #212121;
     font-size: 1.5em;
