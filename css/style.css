@@ -103,7 +103,7 @@ input[type="file"] {
 
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(33, 33, 33, 0.6), rgba(33, 33, 33, 0.6)), url("../img/coding.jpg");
+    background-image: linear-gradient(rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url("../img/coding.jpg");
   
     /* Set a specific height */
     /*height: 100%;*/
@@ -117,10 +117,9 @@ input[type="file"] {
 }
 
 .hero-text {
-    /*text-align: center;*/
     position: relative;
     top: 37.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #F5F5F5;
 }

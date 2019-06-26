@@ -9,10 +9,21 @@
 
     $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
 
-    $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave)
-    VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada')";
+    $queryEmail = "SELECT correo FROM usuario
+    WHERE correo = '$correo'";
 
-    echo $result = mysqli_query($con, $query);
+    $resultEmail = mysqli_query($con, $queryEmail);
 
-    header('Location: ../formRegistrarse.php');
+    $row = mysqli_num_rows($resultEmail);
+
+    if($row == 0) {
+        $query = "INSERT INTO usuario (nombre, telefono, direccion, correo, clave)
+        VALUES ('$nombre', '$telefono', '$direccion', '$correo', '$contrasenaEncriptada')";
+
+        echo $result = mysqli_query($con, $query);
+
+        header('Location: ../formRegistrarse.php');
+    }else {
+        header('Location: ../formRegistrarse.php');
+    }
 ?>
