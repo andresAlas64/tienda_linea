@@ -1,6 +1,6 @@
 /* Efecto desplaza hacia abajo */
 
-/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -8,7 +8,7 @@
             behavior: 'smooth'
         });
     });
-});*/
+});
 
 function validar() {
     var nombre, direccion, telefono, correo, contrasena, expresion;
