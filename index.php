@@ -1,11 +1,11 @@
 <?php
     $titulo = 'Tienda';
-
+  
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbar.php';
 ?>
 <!-- Carousel -->
-<div class="bd-example mb-5">
+<!--<div class="bd-example mb-5">
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -14,7 +14,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/banner.png" class="d-block w-100" class="img-responsive" alt="Imagen uno"> <!-- img 1600x600 -->
+        <img src="img/banner.png" class="d-block w-100" class="img-responsive" alt="Imagen uno"> 
       </div>
       <div class="carousel-item">
         <img src="img/banner.png" class="d-block w-100" class="img-responsive" alt="Imagen dos">
@@ -32,12 +32,23 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+</div>-->
 <!-- Carousel -->
+<!-- Hero -->
+<div class="hero-image mb-5">
+  <div class="hero-text">
+    <div class="container">
+    <h1>Somos Tecnosoft</h1>
+    <p>And I'm a Photographer</p>
+    </div>
+  </div>
+</div>
+
+<!-- Hero -->
 
 <!-- Titulo -->
 <div id="productos" class="container">
-    <h1 class="mb-3 color-gray">Catalogo de productos</h1>
+  <h1 class="mb-3 color-gray">Catalogo de productos</h1>
 </div>
 <!-- Titulo -->
 

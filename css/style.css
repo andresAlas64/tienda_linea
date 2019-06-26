@@ -42,9 +42,10 @@ body {
 }
 
 .btn-color:hover {
-    background: none;
-    border: 1px solid #0336FF;
-    color: #0336FF;
+    background: #0911E8;
+    color: #F5F5F5;
+    font-weight: lighter;
+    transition: 0.3s;
 }
 
 .bg-color-card {
@@ -98,4 +99,28 @@ input[type="file"] {
 
 .bg-jumbotron {
     background: #F5F5F5;
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(33, 33, 33, 0.6), rgba(33, 33, 33, 0.6)), url("../img/coding.jpg");
+  
+    /* Set a specific height */
+    /*height: 100%;*/
+    height: 400px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*position: relative;*/
+}
+
+.hero-text {
+    /*text-align: center;*/
+    position: relative;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
