@@ -109,7 +109,7 @@
                                     <form method="post" action="descargas.php">
                                         <input type="hidden" name="idVenta" value="<?php echo openssl_encrypt($claveVenta, COD, KEY); ?>">
                                         <input type="hidden" name="idProducto" value="<?php echo openssl_encrypt($producto['id'], COD, KEY); ?>">
-                                        <button class="btn btn-color btn-block" type="submit"><i class="fas fa-file-download"></i> Descargar</button>     
+                                        <button class="btn btn-color btn-block" type="submit">Descargar</button>     
                                     </form>
                                 <?php }else { ?>
                                     <button class="btn btn-color btn-block" type="button" disebled><i class="fas fa-file-download"></i> Descargar</button>

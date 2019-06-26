@@ -22,14 +22,24 @@
 <!-- Titulo -->
 
 <!-- Buscador -->
-<div class="container">
+<div class="container mb-5">
   <div class="row">
-    <div class="col-md-12">
-      <div class="input-group mb-5">
+    <div class="col-md-9 mb-3">
+      <div class="input-group">
         <input type="text" class="form-control" placeholder="Buscar productos" aria-label="Recipient's username" aria-describedby="button-addon2" id="buscarProducto" maxlength="60">
         <div class="input-group-append">
           <button class="btn btn-color" type="button" id="button-addon2" onclick="limpiar();">Limpiar</button>
         </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-group">
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Buscar por categoría</option>
+          <option>Tecnologia</option>
+          <option>Programas</option>
+        </select>
       </div>
     </div>
   </div>
