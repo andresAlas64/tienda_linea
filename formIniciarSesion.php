@@ -16,7 +16,7 @@
 
                 <div class="form-label-group mb-3">
                     <label for="inputEmail">Correo</label>
-                    <input type="text" name="correo" id="inputEmail" class="form-control" placeholder="Ingrese el correo" maxlength="255" required autofocus>
+                    <input type="text" name="correo" id="inputEmail" class="form-control" placeholder="Ingrese el correo" maxlength="255" required>
                 </div>
 
                 <div class="form-label-group mb-3">

@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .bg-color {
@@ -21,13 +21,13 @@ body {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px 0 rgba(33,33,33,0.1);
     transition: 0.3s;
     cursor: pointer;
 }
   
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(33,33,33,0.2);
 }
 
 .text-color {
@@ -56,7 +56,11 @@ body {
     color: #F5F5F5;
 }
 
-footer {
+.content {
+    min-height: calc(83.5vh - 70px);
+}
+
+.footer {
     display: block;
 }
 
@@ -102,13 +106,11 @@ input[type="file"] {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url("../img/coding.jpg");
-  
+    background-image: linear-gradient(rgba(33, 33, 33, 0.3), rgba(33, 33, 33, 0.3)), url("../img/coding.jpg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*position: relative;*/
 }
 
 .hero-text {

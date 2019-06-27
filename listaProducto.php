@@ -48,4 +48,5 @@
     </div>";
 
     include_once 'include/docCierre.php';
+    include_once 'include/footer.php';
 ?>

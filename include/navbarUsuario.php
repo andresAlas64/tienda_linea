@@ -13,9 +13,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="productoUsuario.php">Productos<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Panel usuario</a> <!-- usuario.php -->
-                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>  usuario.php
+                </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="services/cerrarSesion.php">Cerrar sesión</a>
                 </li>

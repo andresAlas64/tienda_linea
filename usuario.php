@@ -3,29 +3,18 @@
 
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbarUsuario.php';
-    include_once 'services/config.php';
-    //include_once 'services/conexion.php';
-
-    //session_start();
-
-    /*if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    }*/
 
     $usuario = $_SESSION['usuario'];
 
-    $consulta = counsultaUsuario($usuario);
+    $consulta = consultaUsuario($usuario);
 
-    function counsultaUsuario($usuario) {
-        include_once 'services/conexion.php';
+    function consultaUsuario($usuario) {
+        $con = mysqli_connect("localhost","root","","ejemplo");
 
-        $query = "SELECT id, nombre, direccion, telefono, correo FROM usuario
+        $query = "SELECT * FROM usuario
         WHERE correo = '$usuario'";
 
         $result = mysqli_query($con, $query);
-
-        echo $result;
 
         $fila = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -37,15 +26,11 @@
             $fila['id']
         ];
     }
-
-    //echo 'El usuario es: ' . $usuario;
-
-   /* echo "<a href='services/cerrarSesion.php'>Cerrar sesion</a>";*/
 ?>
 <div class='container'>
     <div class='row'>
         <div class='col-md-12'>
-            <h2 class='mb-4 color-gray'>Panel usuario</h2>
+            <h2 class='mb-3 color-gray'>Panel usuario</h2>
         </div>
     </div>
 </div>
@@ -86,5 +71,5 @@
 </div>
 <?php
     include_once 'include/docCierre.php';
-    /*include_once 'include/footer.php';*/
+    //include_once 'include/footer.php';
 ?>

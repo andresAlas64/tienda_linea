@@ -1,6 +1,6 @@
 /* Efecto desplaza hacia abajo */
 
-/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -8,7 +8,7 @@
             behavior: 'smooth'
         });
     });
-});*/
+});
 
 function validar() {
     var nombre, direccion, telefono, correo, contrasena, expresion;
@@ -160,7 +160,7 @@ function limpiarUsuario() {
 }
 
 $(document).ready(function() {
-    $('#buscarProducto').focus();
+    //$('#buscarProducto').focus();
 
     var texto = $('#buscarProducto').val();
 
@@ -195,7 +195,7 @@ $(document).ready(function() {
     
     /**/
 
-    $('#buscarProductoUsuario').focus();
+    //$('#buscarProductoUsuario').focus();
 
     var texto = $('#buscarProductoUsuario').val();
 
@@ -227,6 +227,23 @@ $(document).ready(function() {
             }
         });
     });
+
+    /***********************************************************************/
+
+    /*var select = document.getElementById('categoria');
+    select.addEventListener('change',
+    function() {
+        var selectedOption = this.options[select.selectedIndex];
+        console.log(selectedOption.value + ': ' + selectedOption.text);
+    });*/
+
+    /*$('#categoria').on('click', function(){
+        alert('Click');
+    });*/
+
+    /*if($('body').height() < $(window).height()) {
+        $('footer').css({'position':'absolute','botton':'0px'});
+    }*/
 });
 
 function validarUsuario() {
@@ -278,4 +295,38 @@ function validarUsuario() {
     }else {
         alertify.success('Se modifico el usuario');
     }
+}
+
+/**/ 
+
+function mostrarSeleccion() {
+    var cod = document.getElementById("categoria").value;
+    
+    $.ajax({
+        type: 'POST',
+        url:  'services/buscarProductoCategoria.php',
+        data: {'texto': cod},
+        error: function() {
+                alert("error petición ajax");
+        },
+        success: function(response) {
+                $("#tablaProductos").html(response);
+        }
+    });
+}
+
+function mostrarSeleccionUsuario() {
+    var cod = document.getElementById("categoriaUsuario").value;
+    
+    $.ajax({
+        type: 'POST',
+        url:  'services/buscarProductoCategoriaUsuario.php',
+        data: {'texto': cod},
+        error: function() {
+                alert("error petición ajax");
+        },
+        success: function(response) {
+                $("#tablaProductoUsuario").html(response);
+        }
+    });
 }

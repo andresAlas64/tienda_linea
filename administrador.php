@@ -13,7 +13,7 @@
 
     $result = mysqli_query($con, $query);
 
-    echo "<div class='container'>
+    echo "<div class='content'><div class='container mb-5'>
         <div class='row'>
             <div class='col-md-12'>
             <a href='agregarAdmin.php' class='btn btn-color mb-3'><i class='fas fa-user-plus'></i> Agregar administrador</a>
@@ -39,7 +39,8 @@
                 </div>
             </div>
         </div>
-    </div>";
+    </div></div>";
 
     include_once 'include/docCierre.php';
+    include_once 'include/footer.php';
 ?>

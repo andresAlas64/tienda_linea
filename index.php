@@ -35,11 +35,11 @@
 
     <div class="col-md-3">
       <div class="form-group">
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Buscar por categoría</option>
-          <option>Tecnologia</option>
-          <option>Programas</option>
-        </select>
+          <select class="form-control" name="categoria" id="categoria" onchange="mostrarSeleccion();">
+            <option value="" disabled selected>Buscar por categoría</option>
+            <option value="1">Tecnologia</option>
+            <option value="2">Programas</option>
+          </select>
       </div>
     </div>
   </div>
@@ -50,6 +50,6 @@
 <div id="tablaProductos" class='mb-4'></div>
 <!-- Card -->
 <?php
-    include_once 'include/docCierre.php';
-    include_once 'include/footer.php';
+  include_once 'include/docCierre.php';
+  include_once 'include/footer.php';
 ?>
