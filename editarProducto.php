@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="descripcion">Descripcion</label>
+                    <label for="descripcion">Descripción</label>
                     <input type="text" class="form-control" name="descripcion" aria-describedby="emailHelp" value="<?php echo rtrim($consulta[1])?>" placeholder="Edite la descripcion del producto">
                 </div>
                 <div class="form-group">

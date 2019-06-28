@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="descripcion">Descripcion</label>
+                        <label for="descripcion">Descripción</label>
                         <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Ingrese la descripcion del producto" maxlength="140"></textarea>
                     </div>
                     <div class="form-group">

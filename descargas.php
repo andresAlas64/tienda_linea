@@ -24,9 +24,9 @@
         if($sentencia -> rowCount() > 0) {
             echo "Archivo en descarga";
 
-            $nombreArchivo = 'archivo/' . $listaProductos[0]['idProdcuto'] . '.pdf';
+            $nombreArchivo = 'archivo/' . $listaProductos[0]['idProdcuto'] . '.zip';
             
-            $nuevoNombreArchivo = $_POST['idVenta'] . $_POST['idProducto'] . '.pdf';
+            $nuevoNombreArchivo = $_POST['idVenta'] . $_POST['idProducto'] . '.zip';
 
             header("Content-Transfer-Encoding: binary");
             header("Content-type: application/force-download");
