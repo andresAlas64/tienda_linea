@@ -10,7 +10,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <div class="text-center mb-3">
-                    <img class="mb-4" src="img/codepen64.png" alt="Logo">
+                    <!--<img class="mb-4" src="img/codepen64.png" alt="Logo">-->
                     <h2 class="h3 mb-3 font-weight-normal">Iniciar sesión</h2>
                 </div>
 

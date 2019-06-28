@@ -57,7 +57,7 @@ body {
 }
 
 .content {
-    min-height: calc(83.5vh - 70px);
+    min-height: calc(85vh - 75px);
 }
 
 .footer {

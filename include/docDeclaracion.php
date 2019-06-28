@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php
         if(!isset($titulo) || empty($titulo)) {
-            $titulo = 'Tienda';
+            $titulo = 'Tecnosoft';
         }else {
             echo "<title>".$titulo."</title>";
         }

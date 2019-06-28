@@ -4,24 +4,19 @@
   include_once 'include/docDeclaracion.php';
   include_once 'include/navbar.php';
 ?>
-<!-- Hero -->
 <div class="hero-image mb-5">
   <div class="hero-text">
     <div class="container">
-      <h1>Somos Tecnosoft</h1>
-      <p>Desde 1998 desarrollando software</p>
+      <div class="col-md-6">
+        <h1>Tecnología avanzada para tus necesidades</h1>
+        <p>Desde 1998 desarrollando software</p>
+      </div>
     </div>
   </div>
 </div>
-<!-- Hero -->
-
-<!-- Titulo -->
 <div id="productos" class="container">
   <h1 class="mb-3 color-gray">Catálogo de productos</h1>
 </div>
-<!-- Titulo -->
-
-<!-- Buscador -->
 <div class="container mb-5">
   <div class="row">
     <div class="col-md-9 mb-3">
@@ -32,7 +27,6 @@
         </div>
       </div>
     </div>
-
     <div class="col-md-3">
       <div class="form-group">
         <select class="form-control" name="categoria" id="categoria" onchange="mostrarSeleccion();">
@@ -44,11 +38,7 @@
     </div>
   </div>
 </div>
-<!-- Buscador -->
-
-<!-- Card -->
 <div id="tablaProductos" class='mb-4'></div>
-<!-- Card -->
 <?php
   include_once 'include/docCierre.php';
   include_once 'include/footer.php';
