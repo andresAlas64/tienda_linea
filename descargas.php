@@ -45,7 +45,7 @@
 
             echo "<div class='container'>
                 <div class='alert alert-color' role='alert'>
-                    Se agotaron sus descargas.
+                    Se agotaron sus descargas
                 </div>
             <div>";
         }
