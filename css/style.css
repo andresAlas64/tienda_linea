@@ -106,7 +106,7 @@ input[type="file"] {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(33, 33, 33, 0.3), rgba(33, 33, 33, 0.3)), url("../img/coding.jpg");
+    background-image: url("../img/coding.png");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
