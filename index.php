@@ -9,7 +9,7 @@
   <div class="hero-text">
     <div class="container">
       <h1>Somos Tecnosoft</h1>
-      <p>And I'm a Photographer</p>
+      <p>Desde 1998 desarrollando software</p>
     </div>
   </div>
 </div>
