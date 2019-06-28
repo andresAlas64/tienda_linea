@@ -25,7 +25,7 @@
             echo "Archivo en descarga";
 
             $nombreArchivo = 'archivo/' . $listaProductos[0]['idProdcuto'] . '.pdf';
-
+            
             $nuevoNombreArchivo = $_POST['idVenta'] . $_POST['idProducto'] . '.pdf';
 
             header("Content-Transfer-Encoding: binary");

@@ -1,5 +1,5 @@
 <?php
-  $titulo = 'Tienda';
+  $titulo = 'Tecnosoft';
   
   include_once 'include/docDeclaracion.php';
   include_once 'include/navbar.php';

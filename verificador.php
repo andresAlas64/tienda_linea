@@ -112,7 +112,7 @@
                                         <button class="btn btn-color btn-block" type="submit">Descargar</button>     
                                     </form>
                                 <?php }else { ?>
-                                    <button class="btn btn-color btn-block" type="button" disebled><i class="fas fa-file-download"></i> Descargar</button>
+                                    <button class="btn btn-color btn-block" type="button" disebled>Descargar</button>
                                 <?php } ?>
                             </div>
                         </div>
