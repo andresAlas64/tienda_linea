@@ -1,8 +1,8 @@
 <?php
-    $titulo = 'Tienda';
+  $titulo = 'Tienda';
   
-    include_once 'include/docDeclaracion.php';
-    include_once 'include/navbar.php';
+  include_once 'include/docDeclaracion.php';
+  include_once 'include/navbar.php';
 ?>
 <!-- Hero -->
 <div class="hero-image mb-5">
@@ -35,11 +35,11 @@
 
     <div class="col-md-3">
       <div class="form-group">
-          <select class="form-control" name="categoria" id="categoria" onchange="mostrarSeleccion();">
-            <option value="" disabled selected>Buscar por categoría</option>
-            <option value="1">Tecnologia</option>
-            <option value="2">Programas</option>
-          </select>
+        <select class="form-control" name="categoria" id="categoria" onchange="mostrarSeleccion();">
+          <option value="" disabled selected>Buscar por categoría</option>
+          <option value="1">Tecnologia</option>
+          <option value="2">Programas</option>
+        </select>
       </div>
     </div>
   </div>

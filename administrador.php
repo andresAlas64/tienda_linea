@@ -22,16 +22,12 @@
                         <thead>
                             <tr>
                                 <th>Correo</th>
-                                <th class='text-center'>Editar</th>
-                                <th class='text-center'>Eliminar</th>
                             </tr>
                         </thead>
                         <tbody>";
                         while($fila = mysqli_fetch_array($result)) {
                             echo "<tr>
                                 <td>".$fila['correo']."</td>
-                                <td class='text-center'><a href='#' class='btn btn-color btn-sm'><i class='fas fa-pencil-alt'></i></a></td>
-                                <td class='text-center'><a href='#' class='btn btn-color btn-sm'><i class='fas fa-trash-alt'></i></a></td>
                             </tr>";
                         }
                         echo "</tbody>

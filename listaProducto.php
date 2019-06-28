@@ -25,6 +25,7 @@
                                 <th>Descripcion</th>
                                 <th>Precio</th>
                                 <th>Imagen</th>
+                                <th>Categoría</th>
                                 <th class='text-center'>Editar</th>
                                 <th class='text-center'>Eliminar</th>
                             </tr>
@@ -36,6 +37,7 @@
                                 <td>".$fila['descripcion']."</td>
                                 <td>".$fila['precio']."</td>
                                 <td>".$fila['imagen']."</td>
+                                <td>".$fila['idCategoria']."</td>
                                 <td class='text-center'><a href='editarProducto.php?id=".$fila['id']."' class='btn btn-color btn-sm'><i class='fas fa-pencil-alt'></i></a></td>
                                 <td class='text-center'><a href='#' class='btn btn-color btn-sm' id='eliminarProducto' onclick='eliminarProducto(".$fila['id'].");'><i class='fas fa-trash-alt'></i></a></td>
                             </tr>";
