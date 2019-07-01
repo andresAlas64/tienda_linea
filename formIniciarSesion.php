@@ -2,7 +2,7 @@
     $titulo = 'Iniciar sesión';
 
     include_once 'include/docDeclaracion.php';
-    include_once 'include/navbar.php';
+    include_once 'include/navbarProducto.php';
 ?>
 <div class="content">
 <form class="form-signin my-5" action="services/sesion.php" method="POST">

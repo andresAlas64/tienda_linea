@@ -2,7 +2,7 @@
   $titulo = 'Contacto';
 
   include_once 'include/docDeclaracion.php';
-  include_once 'include/navbar.php';
+  include_once 'include/navbarProducto.php';
 ?>
 
 <!-- Titulo -->

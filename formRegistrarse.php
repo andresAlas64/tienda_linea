@@ -2,7 +2,7 @@
     $titulo = 'Registrarse';
 
     include_once 'include/docDeclaracion.php';
-    include_once 'include/navbar.php';
+    include_once 'include/navbarProducto.php';
 ?>
 <div class="content">
 <div class="container my-5">
