@@ -4,6 +4,7 @@
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbar.php';
 ?>
+<div class="content">
 <form class="form-signin my-5" action="services/sesion.php" method="POST">
     <div class="container">
         <div class="row">
@@ -28,6 +29,8 @@
         </div>
     </div>
 </form>
+</div>
 <?php
     include_once 'include/docCierre.php';
+    include_once 'include/footer.php';
 ?>

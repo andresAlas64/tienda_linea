@@ -4,6 +4,7 @@
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbarAdmin.php';
 ?>
+<div class="content">
 <form class="form-signin my-5" action="services/insertarAdmin.php" method="POST" onsubmit="return validarAdmin();">
     <div class="container">
         <div class="row">
@@ -27,6 +28,8 @@
         </div>
     </div>
 </form>
+</div>
 <?php
     include_once 'include/docCierre.php';
+    include_once 'include/footer.php';
 ?>

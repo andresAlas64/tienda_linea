@@ -12,7 +12,9 @@
             </div>
         </div>
     </div>
-    <div class="container">
+
+    <div class="contentProducto">
+    <div class="container mb-5">
         <form action="services/insertarProducto.php" method="POST" enctype="multipart/form-data" onsubmit="return validarProducto();">
             <div class="row">
                 <div class="col-md-4">
@@ -52,6 +54,7 @@
             </div>
         </form>
     </div>
+</div>
 </div>
 <?php
     include_once 'include/docCierre.php';

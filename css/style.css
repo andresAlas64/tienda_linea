@@ -57,7 +57,15 @@ body {
 }
 
 .content {
-    min-height: calc(85vh - 75px);
+    min-height: calc(77vh - 70px);
+}
+
+.contentProducto {
+    min-height: calc(69vh - 70px);
+}
+
+.contentUsuario {
+    min-height: calc(71vh - 70px);
 }
 
 .footer {

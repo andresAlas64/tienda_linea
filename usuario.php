@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<div class='container mb-5'>
+<div class="contentUsuario"><div class='container mb-5'>
     <form action="services/editarUsuario.php" method="POST" onsubmit="return validarUsuario();">
         <div class="row">
             <div class='col-md-4'>
@@ -68,8 +68,8 @@
             </div>
         </div>
     </form>
-</div>
+</div></div>
 <?php
     include_once 'include/docCierre.php';
-    //include_once 'include/footer.php';
+    include_once 'include/footer.php';
 ?>

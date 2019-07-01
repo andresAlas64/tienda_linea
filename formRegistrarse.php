@@ -4,6 +4,7 @@
     include_once 'include/docDeclaracion.php';
     include_once 'include/navbar.php';
 ?>
+<div class="content">
 <div class="container my-5">
     <div class="row">
         <div class="col-md-12">
@@ -50,6 +51,8 @@
         </div>
     </div>
 </div>
+</div>
 <?php
     include_once 'include/docCierre.php';
+    include_once 'include/footer.php';
 ?>

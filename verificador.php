@@ -75,7 +75,7 @@
 
         $completado = $sentencia->rowCount();
 
-        session_destroy();
+        //session_destroy();
     }else {
         $mensajePaypal = '<h3>Problema con el pago de paypal</h3>';
     }
