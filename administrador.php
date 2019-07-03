@@ -9,7 +9,9 @@
 
     $administrador = $_SESSION['administrador'];
 
-    $query = "SELECT correo FROM administrador";
+    //$query = "SELECT correo FROM administrador";
+
+    $query = "SELECT nombre, correo, telefono, direccion FROM administrador";
 
     $result = mysqli_query($con, $query);
 
@@ -21,12 +23,18 @@
                     <table class='table table-striped'>
                         <thead>
                             <tr>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Telefono</th>
                                 <th>Correo</th>
                             </tr>
                         </thead>
                         <tbody>";
                         while($fila = mysqli_fetch_array($result)) {
                             echo "<tr>
+                                <td>".$fila['nombre']."</td>
+                                <td>".$fila['direccion']."</td>
+                                <td>".$fila['telefono']."</td>
                                 <td>".$fila['correo']."</td>
                             </tr>";
                         }

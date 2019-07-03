@@ -72,7 +72,7 @@
             <div id="paypal-button-container"></div>
         </p>
         <p>Los productos podrán ser descargados cuando se procese el pago<br/>
-            <strong>(Para aclaraciones: andres.au95@gmail.com)</strong>
+            <strong>(Para aclaraciones: tecnosoft.milenio@gmail.com)</strong>
         </p>
     </div>
 </div>

@@ -1,5 +1,3 @@
-/* Efecto desplaza hacia abajo */
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -73,14 +71,17 @@ function validar() {
 }
 
 function validarAdmin() {
-    var correo, contrasena, expresion;
+    var correo, contrasena, expresion, nombre, telefono, direccion;
 
+    nombre = document.getElementById('nombreAdmin').value;
+    telefono = document.getElementById('telefonoAdmin').value;
     correo = document.getElementById('correoAdmin').value;
     contrasena = document.getElementById('contrasenaAdmin').value;
+    direccion = document.getElementById('direccionAdmin').value;
 
     expresion = /\w+@\w+\.+[a-z]/;
 
-    if(correo === '' || contrasena === '') {
+    if(correo === '' || contrasena === '' || nombre === '' || telefono === '' || direccion === '') {
         alertify.warning('Todos los campos son obligatorios');
 
         return false;
@@ -92,6 +93,21 @@ function validarAdmin() {
     }
     else if(contrasena.length > 255) {
         alertify.warning('La contraseña tiene que ser menor a 255 caracteres');
+
+        return false;
+    }
+    else if(nombre.length > 60) {
+        alertify.warning('El nombre tiene que ser menor a 60 caracteres');
+
+        return false;
+    }
+    else if(direccion.length > 255) {
+        alertify.warning('La direccion tiene que ser menor a 255 caracteres');
+
+        return false;
+    }
+    else if(telefono.length > 60) {
+        alertify.warning('El telefono tiene que ser menor a 20 caracteres');
 
         return false;
     }
@@ -107,8 +123,6 @@ function validarAdmin() {
 function eliminarProducto(id) {
     alertify.confirm("Estas seguro de que lo deseas eliminar",
     function(){
-        //alertify.success('Ok');
-
         window.location = "http://localhost/tienda/services/eliminarProducto.php?id="+id;
     },
     function(){
@@ -160,8 +174,6 @@ function limpiarUsuario() {
 }
 
 $(document).ready(function() {
-    //$('#buscarProducto').focus();
-
     var texto = $('#buscarProducto').val();
 
     $.ajax({
@@ -180,10 +192,6 @@ $(document).ready(function() {
             type: 'POST',
             url:  'services/buscarProducto.php',
             data: {'texto': texto},
-            beforeSend: function() {
-                    //$("#tablaProductos").html("<p align='center'><img src='img/ajaxloader.gif'/></p>");
-                    console.log('Buscando');
-            },
             error: function() {
                     alert("error petición ajax");
             },
@@ -193,10 +201,6 @@ $(document).ready(function() {
         });
     });
     
-    /**/
-
-    //$('#buscarProductoUsuario').focus();
-
     var texto = $('#buscarProductoUsuario').val();
 
     $.ajax({
@@ -215,10 +219,6 @@ $(document).ready(function() {
             type: 'POST',
             url:  'services/buscarProductoUsuario.php',
             data: {'texto': texto},
-            beforeSend: function() {
-                    //$("#tablaProductos").html("<p align='center'><img src='img/ajaxloader.gif'/></p>");
-                    console.log('Buscando');
-            },
             error: function() {
                     alert("error petición ajax");
             },
@@ -227,23 +227,6 @@ $(document).ready(function() {
             }
         });
     });
-
-    /***********************************************************************/
-
-    /*var select = document.getElementById('categoria');
-    select.addEventListener('change',
-    function() {
-        var selectedOption = this.options[select.selectedIndex];
-        console.log(selectedOption.value + ': ' + selectedOption.text);
-    });*/
-
-    /*$('#categoria').on('click', function(){
-        alert('Click');
-    });*/
-
-    /*if($('body').height() < $(window).height()) {
-        $('footer').css({'position':'absolute','botton':'0px'});
-    }*/
 });
 
 function validarUsuario() {
@@ -297,8 +280,6 @@ function validarUsuario() {
     }
 }
 
-/**/ 
-
 function mostrarSeleccion() {
     var cod = document.getElementById("categoria").value;
     
@@ -323,10 +304,10 @@ function mostrarSeleccionUsuario() {
         url:  'services/buscarProductoCategoriaUsuario.php',
         data: {'texto': cod},
         error: function() {
-                alert("error petición ajax");
+            alert("error petición ajax");
         },
         success: function(response) {
-                $("#tablaProductoUsuario").html(response);
+            $("#tablaProductoUsuario").html(response);
         }
     });
 }
