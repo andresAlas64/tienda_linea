@@ -38,7 +38,7 @@
     </div>
   </div>
 </div>
-<div id="tablaProductos" class='mb-4'></div>
+<div id="tablaProductos" class='mb-5'></div>
 <?php
   include_once 'include/docCierre.php';
   include_once 'include/footer.php';

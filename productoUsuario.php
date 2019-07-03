@@ -49,7 +49,7 @@
     </div>
   </div>
   <!-- Buscador -->
-  <div id="tablaProductoUsuario" class='mb-4'></div>
+  <div id="tablaProductoUsuario" class='mb-5'></div>
 </div>
 <?php
   include_once 'include/docCierre.php';

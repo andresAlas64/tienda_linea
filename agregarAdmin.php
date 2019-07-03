@@ -34,7 +34,7 @@
     <div class="container mb-5">
         <form method="POST" action="services/insertarAdmin.php" onsubmit="return validarAdmin();">
             <div class="container">
-                <h5 class="color-gray mb-4">Agregar administrador</h5>
+                <h5 class="color-gray mb-3">Agregar administrador</h5>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">

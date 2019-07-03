@@ -26,7 +26,7 @@
                     $precio = openssl_encrypt($fila['precio'], COD, KEY);
                     $cantidad = openssl_encrypt(1, COD, KEY);
 
-                    echo "<div class='col-md-3 mb-4'> 
+                    echo "<div class='col-md-3 mb-3'> 
                         <div class='card' style='width: 100%;'>
                             <img src='$imagen' class='card-img-top'>
                             <div class='card-body bg-color-card'>

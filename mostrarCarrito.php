@@ -57,7 +57,7 @@
                                             <label for="my-input">Correo</label>
                                             <input id="email" name="email" class="form-control" type="email" placeholder="Ingrese su correo" required>
                                             <small id="emailHelp" class="form-text text-muted">
-                                                Los productos se enviáran a este correo
+                                                Se le enviara una notificación a este correo
                                             </small>
                                         </div>
                                         <button type="submit" name="btnAccion" class="btn btn-color btn-block" value="Proceder">

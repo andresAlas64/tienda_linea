@@ -10,7 +10,7 @@
         <div class="col-md-12">
             <form action="services/insertarRegistro.php" method="POST" onsubmit="return validar();">
                 <div class="container">
-                    <h5 class="color-gray mb-4">Formulario de registro</h5>
+                    <h5 class="color-gray mb-3">Formulario de registro</h5>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
